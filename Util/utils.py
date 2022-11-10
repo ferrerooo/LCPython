@@ -149,3 +149,8 @@ d['Adam'] = 67
 'Thomas' in d
 d.get('Thomas')
 d.get('Thomas', -1)
+
+######## 7 control flow ########
+
+for name in names:
+    print(name)
