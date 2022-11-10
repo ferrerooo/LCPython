@@ -17,6 +17,12 @@ friends.pop()  # delete the tail element
 friends.pop(1) # delete element at index
 friends[1] = 'ff' # update value
 
+if ('ann' in friends) :
+    pass
+
+if ('ann' not in friends) :
+    pass
+
 friends.sort()
 friends.sort(reverse=True)
 
@@ -120,5 +126,26 @@ print("\nEmpty: ", stack.empty())
 
 ####### 5 set ######
 
+# Python has no built-in TreeSet, TreeMap like Java does
+
+s = set([1, 2, 3]) # set的原理和dict一样，所以，同样不可以放入可变对象as key. Try to add a list, and see error
+s = set([1, 1, 2, 2, 3, 3]) # 重复元素在set中自动被过滤
+s.add(4)
+s.remove(4)
+
+s1 = set([1, 2, 3])
+s2 = set([2, 3, 4])
+s1 & s2
+s1 | s2
+
+if (1 in s):
+    pass
 
 ####### 6 map ######
+
+d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
+d['Michael']
+d['Adam'] = 67
+'Thomas' in d
+d.get('Thomas')
+d.get('Thomas', -1)
