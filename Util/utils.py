@@ -5,6 +5,7 @@ print(s)
 print(len(s))
 print(s[1])
 print(s.split('b'))
+# print(f'The area of a circle with radius {r} is {s:.2f}')
 
 
 ####### 2 list ######
@@ -154,3 +155,8 @@ d.get('Thomas', -1)
 
 for name in names:
     print(name)
+
+row0_reverse = [1 - val for val in grid[0]]
+
+for idx, x in enumerate(xs):
+    print(idx, x)
