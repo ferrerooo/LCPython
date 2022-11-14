@@ -153,10 +153,19 @@ d.get('Thomas', -1)
 
 ######## 7 control flow ########
 
-for name in names:
-    print(name)
+#for name in names:
+#    print(name)
 
-row0_reverse = [1 - val for val in grid[0]]
+#row0_reverse = [1 - val for val in grid[0]]
 
-for idx, x in enumerate(xs):
-    print(idx, x)
+#for idx, x in enumerate(xs):
+#    print(idx, x)
+
+
+#################################
+
+import sys;
+
+print(sys.maxsize);
+print(-sys.maxsize - 1);
+
