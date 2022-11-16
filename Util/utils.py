@@ -7,6 +7,11 @@ print(s[1])
 print(s.split('b'))
 # print(f'The area of a circle with radius {r} is {s:.2f}')
 
+# int to string
+num=123
+str(num)
+# string to int
+int("123")
 
 ####### 2 list ######
 
@@ -169,3 +174,8 @@ import sys;
 print(sys.maxsize);
 print(-sys.maxsize - 1);
 
+cars = ['Ford', 'BMW', 'Volvo']
+cars.sort()
+
+print(type(range(9)))
+print(type(list(range(9))))
