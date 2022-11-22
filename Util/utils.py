@@ -1,40 +1,3 @@
-####### 1 string ######
-
-s = 'abc'
-print(s)
-print(len(s))
-print(s[1])
-print(s.split('b'))
-# print(f'The area of a circle with radius {r} is {s:.2f}')
-
-# int to string
-num=123
-str(num)
-# string to int
-int("123")
-
-####### 2 list ######
-
-friends = ['Michael', 'Bob', 'Tracy']
-print(len(friends))
-friends.append("dd")
-friends.insert(1, 'ee')
-friends.pop()  # delete the tail element
-friends.pop(1) # delete element at index
-friends[1] = 'ff' # update value
-
-if ('ann' in friends) :
-    pass
-
-if ('ann' not in friends) :
-    pass
-
-friends.sort()
-friends.sort(reverse=True)
-
-lst = [('candy','30','100'), ('apple','10','200'), ('baby','20','300')]
-lst.sort(key=lambda x:x[1])
-print(lst)
 
 ####### 3 queue ######
 
@@ -99,37 +62,6 @@ print("The heap elements : ")
 for i in heap:
     print(-1 * i, end = ' ')
 
-####### 4 stack ######
-
-# can be implemented by (1) list (2) Collections.deque (3) queue.LifoQueue
-# https://www.geeksforgeeks.org/stack-in-python/
-
-# (1) list
-stack = []
-stack.append('a')
-print(stack.pop())
-
-# (2) collections deque
-from collections import deque
-stack = deque()
-stack.append('a')
-stack.append('b')
-print(stack.pop())
-
-# (3) queue LifoQueue
-from queue import LifoQueue
-stack = LifoQueue(maxsize=3)
-print(stack.qsize())
-stack.put('a')
-stack.put('b')
-stack.put('c')
-print("Full: ", stack.full())
-print("Size: ", stack.qsize())
-print(stack.get())
-print(stack.get())
-print(stack.get())
-print("\nEmpty: ", stack.empty())
-
 ####### 5 set ######
 
 # Python has no built-in TreeSet, TreeMap like Java does
@@ -147,14 +79,6 @@ s1 | s2
 if (1 in s):
     pass
 
-####### 6 map ######
-
-d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
-d['Michael']
-d['Adam'] = 67
-'Thomas' in d
-d.get('Thomas')
-d.get('Thomas', -1)
 
 ######## 7 control flow ########
 
