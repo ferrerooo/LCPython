@@ -5,21 +5,8 @@
 # https://www.geeksforgeeks.org/queue-in-python/
 
 # (1) list
-queue = []
-queue.append('a')
-queue.append('b')
-print(queue.pop(0))
 
-# (2) collections.deque
-from collections import deque
-q = deque()
-q.append('a')
-q.append('b')
-q.append('c')
-print(q.popleft())
-print(q.pop())
-q.appendleft('c')
-print(q)
+
 
 # (3) queue.Queue
 from queue import Queue
